@@ -29,6 +29,5 @@ Rescate Can permitirá a aquellos que busquen adoptar un perro, ya sea de la cal
 -Cada mascota tendrá su foto, su información, que podrá ser vista en una pantalla aparte.
 -El usuario podrá postular para la adopción de un perro mediante un botón en la pantalla que muestre la información del perro.
 -El usuario podrá hacer un pequeño depósito bancario que cubra los costos de adopción, así como desparasitación, vacunación y esterilización de su nueva mascota.
-- Al estar asociados con un albergue de animales, habrán dos formas de adopción, de trato personal con la persona que está dando en adopción al perro, o con un albergue que provea a AyudaCan con los animales. De todas formas habrá un protocolo de postulación para determinar si el usuario es apto para adoptar al can.
-- 
+-Al estar asociados con un albergue de animales, habrán dos formas de adopción, de trato personal con la persona que está dando en adopción al perro, o con un albergue que provea a AyudaCan con los animales. De todas formas habrá un protocolo de postulación para determinar si el usuario es apto para adoptar al can.
 El usuario podrá cerrar la sesión.
