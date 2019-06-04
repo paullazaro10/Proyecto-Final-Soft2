@@ -38,7 +38,7 @@ $pdo = new PDO("mysql:host=localhost;dbname=mascotas;charset=utf8", "root", "");
     <h2>Adopta una mascota ¡Encuentra a tu compañero ideal!</h2>
     <div class="padre" style="height:50px;">
     <div class="hijo" >
-    <a class="hijo" href="perfil.php">MI PERFIL</a>
+    <a class="hijo" href="perfil.php">Adopcion en espera</a>
     </div>
     <div class="hijo">
     <a class="hijo" href="registrar.php">REGISTRA UN ANUNCIO</a>
@@ -51,12 +51,14 @@ $pdo = new PDO("mysql:host=localhost;dbname=mascotas;charset=utf8", "root", "");
     <div class="padre">
     <?php foreach ($pdo->query("SELECT * FROM mascota") as $fila) { ?>
         <div class="hijo" >
-        <div><img style="width:220px; height:150px" src="data:image/jpg;base64,<?php echo base64_encode($fila['foto']);?>"></div>
+        <a href="informacion.php?id=<?php echo $fila["id"]?>"><img style="width:220px; height:150px" src="data:image/jpg;base64,<?php echo base64_encode($fila['foto']);?>"></a>
+        
         <div><?php echo $fila["nombre"] ?></div>
         <div><?php echo $fila["descripcion"] ?></div>
         <div><?php echo $fila["numero"] ?></div>
         <div><?php echo $fila["fecha"] ?></div>
         <div ><a style="color:red" href="editar.php?id=<?php echo $fila["id"]?>">Editar</a></div>
+    
         <div><a href="procesar_adoptar.php?id=<?php echo $fila["id"]?>">Adoptar</a></div>
         </div>
         <?php } ?>

@@ -8,7 +8,7 @@ $id= $_POST["idd"];
 
 
 $pdo = new PDO("mysql:host=localhost;dbname=mascotas;charset=utf8","root","");
-$pdo->query("UPDATE mascota SET nombre='$nombre',descripcion='$descripcion', fecha='$fecha', numero='$numero',foto='$foto' WHERE id= '$id'");
+$pdo->query("UPDATE mascota SET nombre='$nombre',descripcion='$descripcion',foto='$foto', fecha='$fecha', numero='$numero' WHERE id= '$id'");
 
 header("location:index.php");
 ?>
